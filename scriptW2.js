@@ -17,3 +17,20 @@ else if (hour >= 12 && hour < 18)  {
 //18: for any other hour after 18, PRINT goodnight
 else
 console.log('Goodnight');
+
+let age = 'Youngin';
+
+switch (age) {
+    case 'Elderly':
+        console.log('65-100');
+        break;
+    case 'Middle Aged':
+        console.log('40-64');
+        break;
+    case 'Youngin':
+        console.log('20-39');
+        break;
+    default:
+        console.log('0-19');
+    
+}
