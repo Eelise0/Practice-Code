@@ -18,7 +18,7 @@ else if (hour >= 12 && hour < 18)  {
 else
 console.log('Goodnight');
 
-let age = 'Youngin';
+let age = 'Elderly';
 
 switch (age) {
     case 'Elderly':
@@ -34,3 +34,34 @@ switch (age) {
         console.log('0-19');
     
 }
+
+let a = 3;
+let b = 4;
+
+if (a == 3 && b == 4) {
+    console.log('a is 3 and b is 4');
+}
+//Always flatten IF statements like in line 46 if there is not divergent path
+//if there must be a divergent path then use if statements like in line 46-50
+if (a == 3) {
+    if (b == 5) {
+        console.log('a is 3 and b is 4');
+    } else {
+        console.log('a is 3 but b is not 4');
+    }
+}
+
+let ageRequiredToDrink = 21;
+
+let currentAge = 21;
+
+let canPersonDrink = currentAge >= ageRequiredToDrink;
+
+console.log(canPersonDrink);
+
+if (canPersonDrink) {
+    console.log('This person is allowed to drink Alcohol');
+    } else {
+    console.log('This person is not old enough to drink Alcohol');
+}
+
