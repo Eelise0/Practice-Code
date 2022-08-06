@@ -113,7 +113,50 @@ animalList['Iroh'] = 'Dog';
 animalList['Kenzo'] = 'Cat';
 // ************************************************************** //
 /* WHILE LOOPS PRACTICE */
-let a = 2;
-while (a < 10) {
+let a = 200;
+
+ while (a < 10) {
+   console.log(a);
+} 
+do {
+
     console.log(a);
-}
+
+} while (a < 10)
+
+let i = 10;
+
+do {
+
+  i++;
+
+  console.log(i);
+
+} while (i < 3);
+/************************************************************** */
+/* USER INPUT PRACTICE */
+let name = prompt('What is your name?');
+    alert('Welcome' + ", " + name );
+
+let username = prompt('Username: ');
+let password = prompt('Password: ');
+
+if (username === 'Elise76' && password === 'doggie2') {
+    alert('Welcome Back, ' + username);
+ } else {
+    alert('Incorrect Credentials, Try again');
+ }
+ /*************************/
+ let loggedIn = false;
+
+ while (!loggedIn) {
+    let username = prompt('Username: ');
+    let password = prompt('Password: ');
+
+if (username === 'Elise76' && password === 'doggie2') {
+        alert('Welcome Back, ' + username);
+    loggedIn = true;
+} else {
+    alert('Incorrect Credentials, Try again');
+    }
+ }
