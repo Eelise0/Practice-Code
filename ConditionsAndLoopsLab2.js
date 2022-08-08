@@ -82,19 +82,27 @@ switch (studentGrade) {
 console.log(studentClass);
 
 // write a for loop that will iterate backwards from 10 to -10
-
-
+{for (i = 10; i >= -10; --i) {
+    console.log(i);
+}
 
 // write a do/while loop that prints 1 through 50
-
+let a = 0;
+do {
+    a++;
+    console.log(a);
+} while (a < 50);}
 
 // edit the previous do/while loop so that it prints the remainder when the loop number is divided by 4
-
+let b = 0;
+do {
+    b++;
+    console.log(b % 4);
+} while (b < 50);
 
 // Someone messed up the following for loop
 // fix the following infinite loop, uncomment to test
-/* 
-    for(let i = 11; i > 10; i++){
+
+    for(let i = 10; i > 10; i++){
         console.log(i);
     } 
-*/

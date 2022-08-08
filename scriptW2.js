@@ -53,6 +53,20 @@ if (a === 3) {
         console.log('a is 3 but b is not 4');
     }
 }
+/* NESTED IF STATEMENT ************************/
+let num1 = 2; 
+let num2 =2; 
+let num3 = 2; 
+let num4 = 2;
+if (num1 >= num2) {
+    if (num3 >= num4) {
+       console.log('Both statements are true.');
+}   else {
+       console.log('The first statement is true, but the second is not.')
+}
+}
+   console.log('Program ended.');
+/* ********************************************/
 
 let ageRequiredToDrink = 21;
 
@@ -67,6 +81,39 @@ if (canPersonDrink) {
 }   else {
     console.log('This person is not old enough to drink Alcohol');
 }
+/*********************************************/
+if (numberGrade >= 90) {
+        console.log(letterGrade = 'A');
+}   else if (numberGrade <= 89 && numberGrade >= 80) {
+        console.log(letterGrade = 'B');
+}   else if (numberGrade < 80 && numberGrade >= 70) {
+        console.log(letterGrade = 'C');
+}   else if (numberGrade < 70 && numberGrade >= 60) {
+        console.log(letterGrade = 'D');
+}   else {
+    console.log(letterGrade = 'F');
+}
+/* When comparing my code above and the recommended code below, 
+you can see there are many places I could have saved time and energy. They
+both work the same but I did more work that necessary. Firstly, I did not need
+to use console.log everytime, just letterGrade = '' would be fine. Also, I did 
+not realize that the code would not repeat itself so I did not need to be so specific 
+when declaring the else if statements. This problem was from Mastery Week 2 */
+
+if(numberGrade >= 90){
+    letterGrade = 'A';
+} else if(numberGrade >= 80){
+    letterGrade = 'B';
+} else if(numberGrade >= 70){
+    letterGrade = 'C';
+} else if(numberGrade >= 60){
+    letterGrade = 'D';
+} else {
+    letterGrade = 'F';
+}
+
+console.log(letterGrade);
+
 // ************************************************************* //
 // FOR LOOPS PRACTICE //
 for (let i = 25; i < 35; i++) {
