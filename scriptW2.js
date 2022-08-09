@@ -113,6 +113,28 @@ if(numberGrade >= 90){
 }
 
 console.log(letterGrade);
+/*******************WEEK 2 MASTERY CLASS QUESTION************************/
+if (num1 < num2) {
+    console.log(num1);
+}   else if (num1 > num2) {
+    console.log(num2) ;
+}   else if (num2 > num1) {
+    console.log(num1);
+}   else if (num2 < num1) {
+    console.log(num2);
+}   else {
+    console.log('same');
+}
+/****ABOVE IS MY CODE, IT WORKED FINE BUT THE ONE BELOW WAS THE INSTRUCTOR CODE,
+ IT SEEMS IM MAKING IT MORE COMPLEX THAN NECESSARY. THEY BOTH DO THE SAME THING *****/
+if(num1 == num2){
+    console.log("same");
+}
+else if(num1 < num2){
+    console.log(num1)
+} else {
+    console.log(num2)
+}
 
 // ************************************************************* //
 // FOR LOOPS PRACTICE //
@@ -143,6 +165,30 @@ for (let i = 5; i < 25; i++) {
     }
 }
 console.log('Printed numbers between 5-25 that are uneven');
+
+/**** FOR LOOPS FROM WEEK 2 MASTERY********************************* */
+
+for (let i = num; i === num;) {
+    console.log(i + ' x 1 = ' + i*1);
+    console.log(i + ' x 2 = ' + i*2);
+    console.log(i + ' x 3 = ' + i*3);
+    console.log(i + ' x 4 = ' + i*4);
+    console.log(i + ' x 5 = ' + i*5);
+    console.log(i + ' x 6 = ' + i*6);
+    console.log(i + ' x 7 = ' + i*7);
+    console.log(i + ' x 8 = ' + i*8);
+    console.log(i + ' x 9 = ' + i*9);
+    console.log(i + ' x 10 = ' + i*10);
+    break;
+}
+
+/****ABOVE IS MY CODE, IT WORKED FINE BUT THE ONE BELOW WAS THE INSTRUCTOR CODE,
+ IT SEEMS IM MAKING IT MORE COMPLEX THAN NECESSARY. THEY BOTH DO THE SAME THING *****/
+
+ for(var i=1; i<=10; i++) {
+    console.log(num +" x " + i + " = " + (num*i) );
+}
+
 // ************************************************************** //
 // ARRAY PRACTICE //
 /*Numeric Arrays*/
@@ -180,6 +226,56 @@ do {
   console.log(i);
 
 } while (i < 3);
+/**** WHILE LOOPS FROM WEEK 2 MASTERY*********************************/
+
+while (countDown < 3 || countDown > 10) {
+    console.log('We have lift off!');
+    countdown + 1;
+}
+
+while    (countDown <= 10 && countDown >= 1) {
+    console.log(countDown + '...');
+    --countDown; 
+}
+    console.log('We have lift off!');
+
+/* INSTRUCTOR ANSWER BELOW; RESULT WAS SAME BUT THEIR CODE WAS MUCH MORE SIMPLIFIED */
+if (countdown <= 10 && countdown >= 3) {
+    while (countdown >= 1) {
+        console.log(countdown + "...");
+        countdown--;
+    }
+}
+
+console.log("We have lift off!");
+/**** WHILE LOOPS FROM WEEK 2 MASTERY********************************* */
+
+while (currentCupsOfRice < requiredCupsOfRice) {
+    currentCupsOfRice++;
+    console.log('The bowl contains' + ' ' + currentCupsOfRice + ' ' + 'cups of rice.');
+}
+console.log('We have enough rice!');
+
+/* INSTRUCTOR ANSWER BELOW; RESULT WAS SAME BUT THEIR CODE WAS SIMPLIFIED */
+
+while(currentCupsOfRice != requiredCupsOfRice){
+    console.log('The bowl contains ' + (++currentCupsOfRice) + ' cups of rice.');
+}
+console.log('We have enough rice!');
+/**** DO LOOPS FROM WEEK 2 MASTERY********************************* */
+
+do {
+    console.log(userNumber);
+    userNumber += 6;
+}   while (userNumber <= 100);
+
+/* INSTRUCTOR ANSWER BELOW; RESULT WAS SAME */
+
+do {
+    console.log(userNumber);
+    userNumber = userNumber + 6;
+} while(userNumber <= 100);
+
 /************************************************************** */
 /* USER INPUT PRACTICE */
 let name = prompt('What is your name?');
