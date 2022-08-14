@@ -248,6 +248,7 @@ if (countdown <= 10 && countdown >= 3) {
 }
 
 console.log("We have lift off!");
+
 /**** WHILE LOOPS FROM WEEK 2 MASTERY********************************* */
 
 while (currentCupsOfRice < requiredCupsOfRice) {
@@ -262,6 +263,7 @@ while(currentCupsOfRice != requiredCupsOfRice){
     console.log('The bowl contains ' + (++currentCupsOfRice) + ' cups of rice.');
 }
 console.log('We have enough rice!');
+
 /**** DO LOOPS FROM WEEK 2 MASTERY********************************* */
 
 do {
