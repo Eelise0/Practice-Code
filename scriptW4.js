@@ -94,43 +94,44 @@
 //     return evenNumbers;
 //   }
 
-const customers =
-    {
-        name: 'Cerena',
-        address: {
-            street: '1234 W Bell Rd',
-            city: 'Peoria',
-            zip: '85308',
-            state: 'AZ'
-        },
-        membershipLevel: 'GOLD',
-        age: 32
-    }
-    //more customers with the same schema
-    ;
+// const customers =
+//     {
+//         name: 'Cerena',
+//         address: {
+//             street: '1234 W Bell Rd',
+//             city: 'Peoria',
+//             zip: '85308',
+//             state: 'AZ'
+//         },
+//         membershipLevel: 'GOLD',
+//         age: 32
+//     }
+//     //more customers with the same schema
+//     ;
 
-const sockPurchases = (customers) => {
-  let greatSocks = [];
-  let add = '';
-  for (i = 0; i < customers; i++) {
-    if (customers.name == 'C') 
-         add = add + customers[i] + ' ';
-            greatSocks.push(add);
-    if (typeof customers.address !== 'undefined') 
-        add = add + customers[i] + ' ';
-            greatSocks.push(add);
-    if(customers.city === 'Peoria' && customers.state === 'AZ') 
-        add = add + customers[i] + ' ';
-            greatSocks.push(add);
-    if(customers.membershipLevel === 'GOLD'|| customers.membershipLevel === 'PLATINUM')
-        add = add + customers[i] + ' ';
-            greatSocks.push(add);
-    if (customers.age < 29 && customers.membershipLevel === 'SILVER')
-        add = add + customers[i] + ' ';
-            greatSocks.push(add);
+// const sockPurchases = (customers) => {
+//   let greatSocks = [];
+//   let add = '';
+//   for (i = 0; i < customers; i++) {
+//     if (customers.name == 'C') 
+//          add = add + customers[i] + ' ';
+//             greatSocks.push(add);
+//     if (typeof customers.address !== 'undefined') 
+//         add = add + customers[i] + ' ';
+//             greatSocks.push(add);
+//     if(customers.city === 'Peoria' && customers.state === 'AZ') 
+//         add = add + customers[i] + ' ';
+//             greatSocks.push(add);
+//     if(customers.membershipLevel === 'GOLD'|| customers.membershipLevel === 'PLATINUM')
+//         add = add + customers[i] + ' ';
+//             greatSocks.push(add);
+//     if (customers.age < 29 && customers.membershipLevel === 'SILVER')
+//         add = add + customers[i] + ' ';
+//             greatSocks.push(add);
 
-    return greatSocks;
+//     return greatSocks;
 
-}}
+// }}
 
-console.log(sockPurchases(customers));
+// console.log(sockPurchases(customers));
+
